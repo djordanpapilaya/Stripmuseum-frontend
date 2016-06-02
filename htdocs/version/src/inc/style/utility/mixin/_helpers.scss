@@ -1,0 +1,51 @@
+/**
+ * Font Face
+ * @param {string} $fontName - Name of the font
+ * @param {string} $folderName - Subfolder inside the fonts folder
+ * @param {string} $fileName - Name of the font-file
+ * @param {string} $fontWeight (normal) - Font weight value
+ * @param {string} $fontStyle (normal) - Font style value
+ */
+@mixin font-face($fontName, $folderName, $fileName, $fontWeight: normal, $fontStyle: normal) {
+	@font-face {
+		font-family: $fontName;
+		src: url('#{$pathFont}#{$folderName}/#{$fileName}.eot');
+		src: url('#{$pathFont}#{$folderName}/#{$fileName}.eot?#iefix') format('embedded-opentype'),
+		url('#{$pathFont}#{$folderName}/#{$fileName}.woff') format('woff'),
+		url('#{$pathFont}#{$folderName}/#{$fileName}.ttf') format('truetype'),
+		url('#{$pathFont}#{$folderName}/#{$fileName}.svg##{$fontName}') format('svg');
+		font-weight: $fontWeight;
+		font-style: $fontStyle;
+	}
+}
+
+/**
+ * Aspect ratio, create a :before pseudo element for setting an aspect ratio on an element
+ * @param {number} $width (1) - Percentage width
+ * @param {number} $height ($width) - Percentage height
+ * @param {boolean} $relative (true) - Add relative position to element
+ */
+@mixin aspect-ratio($width: 1, $height: $width, $relative: true) {
+	@if $relative == true {
+		position: relative;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		padding-top: ($height / $width) * 100%;
+	}
+}
+
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+@mixin background($name: $spriteDefault, $repeat: no-repeat, $left: 0, $top: 0, $color: transparent, $attachment: scroll) {
+	background: $color url('#{$pathImage}#{$name}') $repeat $left $top $attachment;
+}

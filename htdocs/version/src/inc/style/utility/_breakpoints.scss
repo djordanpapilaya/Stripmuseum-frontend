@@ -1,0 +1,24 @@
+/**
+ * Respond To (Breakpoint)
+ * @param {string} $name - Name of the breakpoint used in $breakpoints
+ */
+@mixin respond-to($name) {
+	@if map-has-key($breakpoints, $name) {
+
+		//@if ($name == 'medium') {
+		//	.is-tablet & {
+		//		@content;
+		//	}
+		//}
+		//@else if ($name == 'small') {
+		//	.is-mobile & {
+		//		@content;
+		//	}
+		//}
+		//@else {
+		@media #{map-get($breakpoints, $name)} {
+			@content;
+			//}
+		}
+	}
+}
