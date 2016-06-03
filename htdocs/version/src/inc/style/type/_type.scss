@@ -3,7 +3,44 @@
 	// add your headings
 }
 
+.heading-02 {
+	font-family: $fontHeadings;
+	margin-top: 60px;
+	color: #fff;
+	font-size: 25px;
+
+	&.dark {
+		color: $colorFontDark;
+	}
+}
+
+.heading-03 {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-family: $fontCopy;
+}
+
+.heading-04 {
+	font-family: $fontFeature;
+	margin: 0;
+	padding: 0;
+	font-size: 65px;
+}
+
+
+
 // Paragraphs
 .copy-01 {
-	// add your copy
+	font-size: 15px;
+	font-family: $fontCopy;
+	color: $colorFontLightDark;
+
+	&.large-line-height {
+		line-height: 30px;
+	}
+
+	&.light {
+		color: $colorWhite;
+	}
 }
