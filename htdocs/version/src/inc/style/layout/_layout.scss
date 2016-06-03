@@ -1,7 +1,19 @@
 html,
 body {
-	padding-top: 0;
+	padding-top: 30px;
 	height: 100%;
+}
+
+.single-margin-bottom {
+	margin-bottom: 20px;
+}
+
+.one-half-margin-bottom {
+	margin-bottom: 30px;
+}
+
+.double-margin-bottom {
+	margin-bottom: 40px;
 }
 
 // import layout styling files here
