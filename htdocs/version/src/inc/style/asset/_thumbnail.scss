@@ -1,0 +1,17 @@
+.thumbnail {
+	padding: 0;
+	border: none;
+	background-image: url("../../data/img/comic-placeholder.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	@include aspect-ratio(290px);
+}
+
+.image-thumbnail {
+
+}
+
+.caption {
+	padding: 0;
+}
