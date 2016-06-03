@@ -7,6 +7,10 @@ $spriteDefault: 'sprite-default.png';
 
 // Fonts
 $fontArial: Arial, sans-serif;
+$fontHeadings: komika_axis;
+$fontCopy: opensans;
+$fontMenu: montserrat;
+$fontFeature: fishfingers;
 
 // Breakpoint sizes
 $breakpoints: (
@@ -18,7 +22,12 @@ $breakpoints: (
 );
 
 // Colors
-$colorMain: #000;
+$colorWhite: #fff;
+$colorMain: #40948B;
+$colorTint: #343434;
+$colorFontDark: #363735;
+$colorFontLightDark: #9B9B9B;
+
 
 // Z-indexes
 $layout: default;
