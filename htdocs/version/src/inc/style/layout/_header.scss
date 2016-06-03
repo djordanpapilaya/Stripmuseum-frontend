@@ -1,0 +1,16 @@
+.navbar-default {
+	background-color: $colorTint;
+	border: none;
+}
+
+.navbar-nav {
+	color: #fff!important;
+	font-family: $fontMenu;
+
+	.active {
+		a {
+			background-color: $colorMain !important;
+			color: #fff!important;
+		}
+	}
+}
