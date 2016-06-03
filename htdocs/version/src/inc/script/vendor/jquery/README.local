@@ -1,0 +1,15 @@
+URL: https://github.com/jquery/jquery/tree/2.1-stable
+Version: 2.1.5-pre (Custom build)
+License: MIT
+
+Description:
+jQuery is a fast, small, and feature-rich JavaScript library. It makes things
+like HTML document traversal and manipulation, event handling, animation, and
+Ajax much simpler with an easy-to-use API that works across a multitude of
+browsers. With a combination of versatility and extensibility, jQuery has
+changed the way that millions of people write JavaScript.
+
+Local Modifications:
+Custom build (see <https://github.com/jquery/jquery/blob/master/README.md#how-to-build-your-own-jquery>)
+with only the required features enabled to reduce file size, excluded are:
+-effects,-effects/animatedSelector,-effects/Tween,-event/alias,-core/ready
