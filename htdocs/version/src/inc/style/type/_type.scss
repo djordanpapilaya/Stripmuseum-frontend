@@ -5,9 +5,10 @@
 
 .heading-02 {
 	font-family: $fontHeadings;
-	margin-top: 60px;
 	color: #fff;
 	font-size: 25px;
+	padding-top: 60px;
+	margin: 0;
 
 	&.dark {
 		color: $colorFontDark;
@@ -26,8 +27,16 @@
 	margin: 0;
 	padding: 0;
 	font-size: 65px;
+	color: $colorWhite;
+	text-align: center;
 }
 
+.heading-05 {
+	font-family: $fontHeadings;
+	font-size: 15px;
+	color: $colorFontDark;
+	text-transform: uppercase;
+}
 
 
 // Paragraphs
@@ -42,5 +51,20 @@
 
 	&.light {
 		color: $colorWhite;
+	}
+
+	&.bold {
+		font-weight: bolder;
+	}
+}
+
+.copy-02 {
+	font-size: 14px;
+	font-family: $fontCopy;
+	color: $colorWhite;
+	line-height: 24px;
+
+	&.bold {
+		font-weight: bolder;
 	}
 }
