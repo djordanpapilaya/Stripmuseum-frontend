@@ -1,7 +1,7 @@
 ///<reference path='../def/definitions.d.ts' />
 requirejs.config({
     baseUrl: 'inc/script',
-    waitSeconds: 15,
+    waitSeconds: 5,
     paths: {
         requireLib: 'vendor/require/require',
         jquery: 'vendor/jquery/jquery',
