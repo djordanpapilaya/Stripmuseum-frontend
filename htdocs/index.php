@@ -104,13 +104,13 @@ $basepath = HttpHelper::getBasePath();
 					fugiat nulla pariatu desroste lor de mir.
 					onsectetur adipiscing elit, sed do eiusmod tempor.
 				</p>
-				<a class="btn btn-default single-margin-bottom" href="#" role="button">Link</a>
+				<a class="quote-button single-margin-bottom" role="button">LEES VERDER</a>
 			</div>
 		</div>
 	</div>
 
-	<section class="" id="exhibitions-preview">
-		<h2 class="heading-02 dark text-center text-uppercase">Tentoonstellingen</h2>
+	<section class="double-margin-bottom" id="exhibitions-preview">
+		<h2 class="heading-02 dark text-center text-uppercase single-margin-bottom">Tentoonstellingen</h2>
 
 		<p class="copy-01 text-center double-margin-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 			do eiusmod tempor
@@ -140,11 +140,111 @@ $basepath = HttpHelper::getBasePath();
 			</div>
 		</div>
 	</section>
+
+	<section id="quote" class="pad-section">
+		<div class="col-md-6 col-md-offset-3">
+			<p class="heading-04">EEN COMPLEET NIEUW STRIPMUSEUM in rotterdam</p>
+		</div>
+	</section>
+
+	<section id="news-preview">
+		<h2 class="heading-02 dark text-center text-uppercase single-margin-bottom">NIEUWS</h2>
+
+		<p class="copy-01 text-center double-margin-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+			do eiusmod tempor incididunt.</p>
+
+		<div class="row container-fluid">
+			<div class="col-sm-6 col-md-4 news-item">
+
+				<div class="caption">
+					<h3 class="heading-05 text-uppercase">De appel rolt niet ver van de boom</h3>
+				</div>
+				<p class="copy-01 large-line-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco la.
+				</p>
+
+				<div class="thumbnail small">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 news-item">
+
+				<div class="caption">
+					<h3 class="heading-05 text-uppercase">EEN OF ANDERE LANGE TITEL</h3>
+				</div>
+				<p class="copy-01 large-line-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco la.
+				</p>
+
+				<div class="thumbnail small">
+				</div>
+
+			</div>
+			<div class="col-sm-6 col-md-4 news-item">
+
+				<div class="caption">
+					<h3 class="heading-05 text-uppercase">Een titel voor de dag van morgen</h3>
+				</div>
+				<p class="copy-01 large-line-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco la.
+				</p>
+
+				<p></p>
+
+				<div class="thumbnail small">
+				</div>
+			</div>
+		</div>
+	</section>
 </div>
-</div>
+
+<footer class="default-footer">
+	<div class="row">
+		<div class="col-md-2">
+			<img src="data/img/logo.png" alt="Stichting strips" class="footer-logo">
+		</div>
+
+		<div class="col-md-4 col-md-offset-1">
+			<div class="footer-adres">
+				<span class="copy-02 bold">Bezoek adres</span>
+			<span class="copy-02 single-margin-bottom">
+				Wijnburgerstraat 1
+				<br>
+				3011 XW Rotterdam
+			</span>
+
+				<span class="copy-02 bold correspondentie">Correspondentie Adres</span>
+			<span class="copy-02">
+				Noordhoevelaan 37
+				<br>
+				3319 CH Dordrecht
+			</span>
+			</div>
+			<div class=footer-contact">
+				<span class="copy-02">06 286 905 38</span>
+				<span class="copy-02">info@stichtingstrips.nl</span>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-md-offset-2 pull-right">
+			<button class="pull-right">jjfsgjlsdfg</button>
+
+			<div class="social-media">
+				<a href="facebook-icon" class="">f</a>
+				<a href="twitter-icon"></a>
+			</div>
+		</div>
+	</div>
+</footer>
 
 <!-- build:js inc/script/app/bundle.js -->
 <script src="inc/script/vendor/require/require.js"></script>
+<script src="inc/script/vendor/jquery/jquery.js"></script>
 <script src="inc/script/app/Bootstrap.js"></script>
 <!-- endbuild -->
 

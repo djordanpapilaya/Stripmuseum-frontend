@@ -6174,9 +6174,10 @@ button.close {
   font-style: normal; }
 .heading-02 {
   font-family: komika_axis;
-  margin-top: 60px;
   color: #fff;
-  font-size: 25px; }
+  font-size: 25px;
+  padding-top: 60px;
+  margin: 0; }
   .heading-02.dark {
     color: #363735; }
 
@@ -6190,7 +6191,15 @@ button.close {
   font-family: fishfingers;
   margin: 0;
   padding: 0;
-  font-size: 65px; }
+  font-size: 65px;
+  color: #fff;
+  text-align: center; }
+
+.heading-05 {
+  font-family: komika_axis;
+  font-size: 15px;
+  color: #363735;
+  text-transform: uppercase; }
 
 .copy-01 {
   font-size: 15px;
@@ -6200,6 +6209,52 @@ button.close {
     line-height: 30px; }
   .copy-01.light {
     color: #fff; }
+  .copy-01.bold {
+    font-weight: bolder; }
+
+.copy-02 {
+  font-size: 14px;
+  font-family: opensans;
+  color: #fff;
+  line-height: 24px; }
+  .copy-02.bold {
+    font-weight: bolder; }
+
+.quote-button {
+  border: 3px solid #fff;
+  border-radius: 8px;
+  font-family: komika_axis;
+  padding: 10px;
+  color: #fff;
+  position: relative;
+  transition: all 0.2s ease; }
+  .quote-button:hover {
+    color: #fff;
+    text-decoration: none; }
+    .quote-button:hover:before {
+      left: 20px; }
+  .quote-button:active {
+    color: #fff;
+    text-decoration: none; }
+  .quote-button.red:before {
+    background: #F4595B; }
+  .quote-button:before {
+    content: "";
+    position: absolute;
+    top: -webkit-calc(100% - 8px);
+    top: calc(100% - 8px);
+    left: 70px;
+    height: 20px;
+    width: 20px;
+    background: #40948B;
+    transform: rotate(45deg);
+    border-bottom: inherit;
+    border-right: inherit;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
 
 .thumbnail {
   padding: 0;
@@ -6213,9 +6268,15 @@ button.close {
     content: '';
     display: block;
     padding-top: 100%; }
+  .thumbnail.small {
+    height: 150px; }
 
 .caption {
   padding: 0; }
+
+.news-item {
+  background: #fff;
+  padding: 0 20px; }
 
 html,
 body {
@@ -6242,6 +6303,26 @@ body {
     background-color: #40948B !important;
     color: #fff !important; }
 
+.default-footer {
+  background: #343434;
+  min-height: 300px;
+  padding: 55px 0; }
+
+.footer-logo {
+  width: 150px; }
+
+.footer-adres {
+  width: 50%;
+  margin-right: 50px;
+  float: left; }
+  .footer-adres .correspondentie {
+    display: block;
+    margin-top: 25px; }
+
+.footer-contact {
+  width: 50%;
+  float: left; }
+
 .page--home {
   background: #fff; }
   .page--home .bg {
@@ -6258,6 +6339,20 @@ body {
   .page--home #intro-text {
     margin-top: -220px;
     position: relative;
-    background: #40948B; }
+    background: #40948B;
+    padding: 0 0 40px; }
+  .page--home #quote {
+    background: url(../../data/img/parallex-placeholder.png) no-repeat center center fixed;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .page--home #news-preview {
+    background-color: #F7F7F7; }
 
 /*# sourceMappingURL=screen.css.map */

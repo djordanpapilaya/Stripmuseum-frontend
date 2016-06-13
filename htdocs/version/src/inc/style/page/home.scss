@@ -6,8 +6,8 @@
 		position: fixed;
 		width: 100%;
 		height: 650px;
-		top:0;
-		left:0;
+		top: 0;
+		left: 0;
 		z-index: -1;
 	}
 
@@ -17,8 +17,27 @@
 	}
 
 	#intro-text {
-		margin-top:-220px;
-		position:relative;
+		margin-top: -220px;
+		position: relative;
 		background: $colorMain;
+		padding: 0 0 40px;
+	}
+
+	#quote {
+		background: url(../../data/img/parallex-placeholder.png) no-repeat center center fixed;
+		display: flex;
+		align-items: center;
+		height: 300px;
+		position: relative;
+		width: 100%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	#news-preview {
+		background-color: $colorGreyTint;
+
 	}
 }
