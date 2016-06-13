@@ -73,7 +73,7 @@ $basepath = HttpHelper::getBasePath();
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Brand</a>
+			<a class="navbar-brand" href="#"><img src="data/img/logo.png" alt="Stichting strips"></a>
 		</div>
 
 		<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
