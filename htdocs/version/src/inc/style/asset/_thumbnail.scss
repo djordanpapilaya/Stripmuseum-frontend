@@ -7,15 +7,28 @@
 	background-repeat: no-repeat;
 	@include aspect-ratio(290px);
 
-	&.small {
-		height: 150px;
+	&:hover {
+
+	}
+}
+
+.thumbnail-small {
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 150px;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+
+	&:hover {
+		background-size: 150% 150%;
+		background-position: center center;
 	}
 }
 
 .image-thumbnail {
-
 }
-
 
 .caption {
 	padding: 0;
