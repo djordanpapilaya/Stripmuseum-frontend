@@ -1,0 +1,45 @@
+.quote-button {
+	border: 3px solid $colorWhite;
+	border-radius: 8px;
+	font-family: $fontHeadings;
+	padding: 10px;
+	color: $colorWhite;
+	position: relative;
+	transition: all 0.2s ease;
+
+	&:hover {
+		color: $colorWhite;
+		text-decoration: none;
+
+		&:before {
+			left: 20px;
+		}
+	}
+
+	&:active {
+		color: $colorWhite;
+		text-decoration: none;
+	}
+
+	&.red {
+		&:before {
+			background: $colorRed;
+		}
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: -webkit-calc(100% - 8px);
+		top: calc(100% - 8px);
+		left: 70px;
+		height: 20px;
+		width: 20px;
+		background: $colorMain;
+		transform: rotate(45deg);
+		border-bottom: inherit;
+		border-right: inherit;
+		-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;
+	}
+
+}
