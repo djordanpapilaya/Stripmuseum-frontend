@@ -165,7 +165,9 @@ $basepath = HttpHelper::getBasePath();
 					ullamco la.
 				</p>
 
-				<div class="thumbnail small">
+				<p class="copy-03">01-01-2016</p>
+
+				<div class="thumbnail-small" style="background-image: url(data/img/comic-placeholder.jpg)">
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-4 news-item">
@@ -179,7 +181,9 @@ $basepath = HttpHelper::getBasePath();
 					ullamco la.
 				</p>
 
-				<div class="thumbnail small">
+				<p class="copy-03">01-01-2016</p>
+
+				<div class="thumbnail-small" style="background-image: url(data/img/comic-placeholder.jpg)">
 				</div>
 
 			</div>
@@ -194,9 +198,9 @@ $basepath = HttpHelper::getBasePath();
 					ullamco la.
 				</p>
 
-				<p></p>
+				<p class="copy-03">01-01-2016</p>
 
-				<div class="thumbnail small">
+				<div class="thumbnail-small" style="background-image: url(data/img/comic-placeholder.jpg)">
 				</div>
 			</div>
 		</div>
@@ -204,40 +208,37 @@ $basepath = HttpHelper::getBasePath();
 </div>
 
 <footer class="default-footer">
-	<div class="row">
-		<div class="col-md-2">
-			<img src="data/img/logo.png" alt="Stichting strips" class="footer-logo">
-		</div>
+	<div class="col-md-2 col-sm-1">
+		<img src="data/img/logo.png" alt="Stichting strips" class="footer-logo">
+	</div>
 
-		<div class="col-md-4 col-md-offset-1">
-			<div class="footer-adres">
-				<span class="copy-02 bold">Bezoek adres</span>
+	<div class="col-md-4 col-md-offset-1 single-margin-bottom">
+		<div class="footer-adres single-margin-bottom col-md-6 col-sm-12">
+			<span class="copy-02 bold">Bezoek adres</span>
 			<span class="copy-02 single-margin-bottom">
 				Wijnburgerstraat 1
 				<br>
 				3011 XW Rotterdam
 			</span>
 
-				<span class="copy-02 bold correspondentie">Correspondentie Adres</span>
+			<span class="copy-02 bold correspondentie">Correspondentie Adres</span>
 			<span class="copy-02">
 				Noordhoevelaan 37
 				<br>
 				3319 CH Dordrecht
 			</span>
-			</div>
-			<div class=footer-contact">
-				<span class="copy-02">06 286 905 38</span>
-				<span class="copy-02">info@stichtingstrips.nl</span>
-			</div>
 		</div>
+		<div class="footer-contact col-md-6 col-sm-12">
+			<span class="copy-02">06 286 905 38</span>
+			<span class="copy-02">info@stichtingstrips.nl</span>
+		</div>
+	</div>
 
-		<div class="col-md-3 col-md-offset-2 pull-right">
-			<button class="pull-right">jjfsgjlsdfg</button>
-
-			<div class="social-media">
-				<a href="facebook-icon" class="">f</a>
-				<a href="twitter-icon"></a>
-			</div>
+	<div class="col-md-3 col-md-offset-2">
+		<div class="icons">
+			<a href="" class="fa fa-arrow-up"></a>
+			<a href="" class="fa fa-facebook-f"></a>
+			<a href="" class="fa fa-instagram"></a>
 		</div>
 	</div>
 </footer>

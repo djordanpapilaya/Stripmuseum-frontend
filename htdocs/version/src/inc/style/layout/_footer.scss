@@ -6,12 +6,23 @@
 
 .footer-logo {
 	width: 150px;
+
+	@include respond-to('small') {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
 }
 
 .footer-adres {
 	width: 50%;
-	margin-right: 50px;
-	float: left;
+
+	@include respond-to('small') {
+		width: 100%;
+		span {
+			display: block;
+			text-align: center;
+		}
+	}
 
 	.correspondentie {
 		display: block;
@@ -21,5 +32,79 @@
 
 .footer-contact {
 	width: 50%;
-	float: left;
+
+	@include respond-to('small') {
+		width: 100%;
+
+		span {
+			display: block;
+			text-align: center;
+		}
+	}
+}
+
+.icons {
+	font-size: 35px;
+	width: 100%;
+	margin-right: 10px;
+	display: inline-block;
+	text-align: center;
+
+	@include respond-to('small') {
+		float: none;
+		a {
+			float: none;
+		}
+	}
+
+	a {
+		padding: 20px 25px;
+		background: white;
+		border-radius: 50%;
+		width: 70px;
+		height: 70px;
+		color: $colorTint;
+
+		&.fa-instagram {
+			padding: 18px 22px;
+		}
+
+		&.fa-arrow-up {
+			padding: 15px;
+			background: transparent;
+			border: 3px solid $colorWhite;
+			color: $colorWhite;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.icon-up {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	border: 3px solid $colorWhite;
+	float: right;
+	display: inline-block;
+
+	@include respond-to('small') {
+		float: none;
+		a {
+			float: none;
+		}
+	}
+
+	a {
+		font-size: 35px;
+		color: $colorWhite;
+		padding: 15px;
+
+		&:hover {
+			text-decoration: none;
+			color: $colorWhite;
+		}
+	}
 }
