@@ -13,6 +13,14 @@
 			color: #fff!important;
 		}
 	}
+
+	a {
+		color: $colorWhite !important;
+
+		&:hover {
+			background-color: $colorMain !important;
+		}
+	}
 }
 
 .navbar-brand {
