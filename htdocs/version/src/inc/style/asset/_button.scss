@@ -5,7 +5,7 @@
 	padding: 10px;
 	color: $colorWhite;
 	position: relative;
-	transition: all 0.2s ease;
+	transition: all 0.5s ease;
 
 	&:hover {
 		color: $colorWhite;
@@ -13,6 +13,15 @@
 
 		&:before {
 			left: 20px;
+		}
+	}
+
+	&.is-mouse-down {
+		background: $colorWhite !important;
+		color: $colorMain !important;
+
+		&:before {
+			background: $colorWhite !important;
 		}
 	}
 
