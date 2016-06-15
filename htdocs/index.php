@@ -256,6 +256,7 @@ $basepath = HttpHelper::getBasePath();
 
 <!-- build:js inc/script/app/bundle.js -->
 <script src="inc/script/vendor/jquery/jquery.js"></script>
+<script src="inc/script/vendor/jquery/jqueryui.js"></script>
 <script src="inc/script/vendor/require/require.js"></script>
 <script src="inc/script/app/Bootstrap.js"></script>
 <!-- endbuild -->

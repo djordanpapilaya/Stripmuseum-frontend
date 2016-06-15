@@ -1,5 +1,5 @@
 ///<reference path="../def/definitions.d.ts" />
 
-require([
+define([
 	'jquery'
 ]);
