@@ -38,7 +38,6 @@
 	text-transform: uppercase;
 }
 
-
 // Paragraphs
 .copy-01 {
 	font-size: 15px;
@@ -73,4 +72,18 @@
 	font-size: 15px;
 	font-family: $fontCopy;
 	color: $colorFontDark;
+}
+
+a {
+	color: inherit;
+
+	&:hover {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	&:active {
+		text-decoration: none;
+		color: inherit;
+	}
 }
