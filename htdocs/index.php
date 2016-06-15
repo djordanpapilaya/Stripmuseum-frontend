@@ -57,8 +57,6 @@ $basepath = HttpHelper::getBasePath();
 	<!-- [deploytool] -->
 
 	<link href="inc/style/screen.css" rel="stylesheet" type="text/css"/>
-
-	<script src="inc/script/vendor/modernizr/modernizr.js"></script>
 </head>
 <body data-gaia-container="main">
 
@@ -82,6 +80,18 @@ $basepath = HttpHelper::getBasePath();
 				<li><a href="#">Het museum</a></li>
 				<li><a href="#">Nieuws</a></li>
 				<li><a href="#">Contact</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">One more separated link</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -119,6 +129,7 @@ $basepath = HttpHelper::getBasePath();
 		<div class="row container-fluid">
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail">
+					<div class="thumbnail-overlay">lalalalalla</div>
 				</div>
 				<div class="caption text-center">
 					<h3 class="heading-03 text-uppercase">Expositie naam</h3>
@@ -229,14 +240,14 @@ $basepath = HttpHelper::getBasePath();
 			</span>
 		</div>
 		<div class="footer-contact col-md-6 col-sm-12">
-			<span class="copy-02">06 286 905 38</span>
-			<span class="copy-02">info@stichtingstrips.nl</span>
+			<span class="copy-02"><a href="tel:0031628690538">06 286 905 38</a></span>
+			<span class="copy-02"><a href="mailto:info@stichtingstrips.nl">info@stichtingstrips.nl</a></span>
 		</div>
 	</div>
 
 	<div class="col-md-3 col-md-offset-2">
 		<div class="icons">
-			<a href="" class="fa fa-arrow-up"></a>
+			<a href="" class="fa fa-arrow-up" id="scroll_top"></a>
 			<a href="" class="fa fa-facebook-f"></a>
 			<a href="" class="fa fa-instagram"></a>
 		</div>
@@ -244,8 +255,8 @@ $basepath = HttpHelper::getBasePath();
 </footer>
 
 <!-- build:js inc/script/app/bundle.js -->
-<script src="inc/script/vendor/require/require.js"></script>
 <script src="inc/script/vendor/jquery/jquery.js"></script>
+<script src="inc/script/vendor/require/require.js"></script>
 <script src="inc/script/app/Bootstrap.js"></script>
 <!-- endbuild -->
 

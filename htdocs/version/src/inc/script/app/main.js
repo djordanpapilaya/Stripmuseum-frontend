@@ -8,11 +8,29 @@ define(["require", "exports"], function (require, exports) {
             this.init();
         }
         Main.prototype.init = function () {
-            $("body").on("mousedown", function (e) {
+            $("a").on("mousedown", function (e) {
                 return $(e.target).addClass("is-mouse-down");
             }).on("mouseup", function (e) {
                 return $(e.target).removeClass("is-mouse-down");
             });
+            $("#scroll_top").on("click", function (e) {
+                e.preventDefault();
+                scrollTo(document.body, 0, 600);
+            });
+            function scrollTo(element, to, duration) {
+                if (duration <= 0) {
+                    return;
+                }
+                var difference = to - element.scrollTop;
+                var perTick = difference / duration * 10;
+                setTimeout(function () {
+                    element.scrollTop = element.scrollTop + perTick;
+                    if (element.scrollTop == to) {
+                        return;
+                    }
+                    scrollTo(element, to, duration - 10);
+                }, 10);
+            }
         };
         return Main;
     })();
