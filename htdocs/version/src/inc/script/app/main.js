@@ -1,11 +1,11 @@
-///<reference path='../def/definitions.d.ts' />
-/**
- * Created by MacBookDjordan on 19/02/16.
- */
 define(["require", "exports"], function (require, exports) {
+    /**
+     * Created by MacBookDjordan on 19/02/16.
+     */
     var Main = (function () {
         function Main() {
             this.init();
+            this.hoverThumbnail();
         }
         Main.prototype.init = function () {
             $("a").on("mousedown", function (e) {
@@ -31,6 +31,33 @@ define(["require", "exports"], function (require, exports) {
                     scrollTo(element, to, duration - 10);
                 }, 10);
             }
+        };
+        Main.prototype.hoverThumbnail = function () {
+            var thumbHeight = $(".thumbnail").height();
+            console.log(thumbHeight);
+            $(".thumbnail-overlay").css("top", thumbHeight).css("display", "block");
+            $(".thumbnail").hover(function () {
+                $(".thumbnail-overlay").animate({
+                    top: 0
+                }, 500, "linear", function () {
+                });
+            }, function () {
+                $(".thumbnail-overlay").animate({
+                    top: thumbHeight
+                }, 500, "linear", function () {
+                });
+            });
+            $(".thumbnail").on("mouseenter", function () {
+                $(".thumbnail-overlay").animate({
+                    top: 0
+                }, 500, "linear", function () {
+                });
+            }).on("mouseleave", function () {
+                $(".thumbnail-overlay").animate({
+                    top: thumbHeight
+                }, 500, "linear", function () {
+                });
+            });
         };
         return Main;
     })();
