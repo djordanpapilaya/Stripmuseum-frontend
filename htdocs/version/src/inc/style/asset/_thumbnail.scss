@@ -1,6 +1,7 @@
 .thumbnail {
 	padding: 0;
 	border: none;
+	border-radius: 0;
 	background-image: url("../../data/img/comic-placeholder.jpg");
 	background-size: cover;
 	background-position: center center;
@@ -9,31 +10,64 @@
 	overflow: hidden;
 
 	.thumbnail-overlay {
-		background: red;
+		background-image: url("../../data/img/red-pattern.png");
+		background-position: bottom;
+		background-repeat: no-repeat;
 		position: absolute;
 		height: 100%;
 		width: 100%;
 		bottom: 0;
 		left: 0;
 	}
-}
 
-.thumbnail-small {
-	background-size: 100% 100%;
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 150px;
-	-moz-transition: all .5s;
-	-webkit-transition: all .5s;
-	transition: all .5s;
+	.thumbnail-mask {
+		background: $colorRed;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0.7;
+		width: 100%;
+		height: 100%;
+	}
 
-	&:hover {
-		background-size: 150% 150%;
-		background-position: center center;
+	.thumbnail-content {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		z-index: 100;
+		padding: 65px 45px;
+
+		a {
+			margin: 0 auto;
+			display: table;
+			bottom: -80px;
+		}
 	}
 }
 
-.image-thumbnail {
+.thumbnail-small {
+	background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 150px;
+	transition: background-size 0.5s ease-in;
+	-moz-transition: background-size 0.5s ease-in;
+	-ms-transition: background-size 0.5s ease-in;
+	-o-transition: background-size 0.5s ease-in;
+	-webkit-transition: background-size 0.5s ease-in;
+
+	&:hover {
+		background-size: 125%;
+		background-position: center center;
+		transition: background-size 0.5s ease-in;
+		-moz-transition: background-size 0.5s ease-in;
+		-ms-transition: background-size 0.5s ease-in;
+		-o-transition: background-size 0.5s ease-in;
+		-webkit-transition: background-size 0.5s ease-in;
+	}
 }
 
 .caption {

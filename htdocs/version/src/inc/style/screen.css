@@ -8403,6 +8403,8 @@ button.close {
     color: #fff; }
   .copy-01.bold {
     font-weight: bolder; }
+  .copy-01.large-size {
+    font-size: 18px; }
 
 .copy-02 {
   font-size: 14px;
@@ -8449,6 +8451,8 @@ a {
     text-decoration: none; }
   .quote-button.red:before {
     background: #F4595B; }
+  .quote-button.red.is-mouse-down {
+    color: #F4595B !important; }
   .quote-button:before {
     content: "";
     position: absolute;
@@ -8466,10 +8470,13 @@ a {
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
+  .quote-button.small:before {
+    left: 30px; }
 
 .thumbnail {
   padding: 0;
   border: none;
+  border-radius: 0;
   background-image: url("../../data/img/comic-placeholder.jpg");
   background-size: cover;
   background-position: center center;
@@ -8481,24 +8488,54 @@ a {
     display: block;
     padding-top: 100%; }
   .thumbnail .thumbnail-overlay {
-    background: red;
+    background-image: url("../../data/img/red-pattern.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
     position: absolute;
     height: 100%;
     width: 100%;
     bottom: 0;
     left: 0; }
+  .thumbnail .thumbnail-mask {
+    background: #F4595B;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%; }
+  .thumbnail .thumbnail-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 100;
+    padding: 65px 45px; }
+    .thumbnail .thumbnail-content a {
+      margin: 0 auto;
+      display: table;
+      bottom: -80px; }
 
 .thumbnail-small {
-  background-size: 100% 100%;
+  background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   height: 150px;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-  transition: all .5s; }
+  transition: background-size 0.5s ease-in;
+  -moz-transition: background-size 0.5s ease-in;
+  -ms-transition: background-size 0.5s ease-in;
+  -o-transition: background-size 0.5s ease-in;
+  -webkit-transition: background-size 0.5s ease-in; }
   .thumbnail-small:hover {
-    background-size: 150% 150%;
-    background-position: center center; }
+    background-size: 125%;
+    background-position: center center;
+    transition: background-size 0.5s ease-in;
+    -moz-transition: background-size 0.5s ease-in;
+    -ms-transition: background-size 0.5s ease-in;
+    -o-transition: background-size 0.5s ease-in;
+    -webkit-transition: background-size 0.5s ease-in; }
 
 .caption {
   padding: 0; }
@@ -8535,6 +8572,8 @@ body {
     color: #fff !important; }
     .navbar-nav a:hover {
       background-color: #40948B !important; }
+  .navbar-nav .dropdown-menu {
+    background: #343434; }
 
 .navbar-brand {
   padding: 5px 15px; }

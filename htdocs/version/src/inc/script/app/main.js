@@ -37,26 +37,13 @@ define(["require", "exports"], function (require, exports) {
             console.log(thumbHeight);
             $(".thumbnail-overlay").css("top", thumbHeight).css("display", "block");
             $(".thumbnail").hover(function () {
-                $(".thumbnail-overlay").animate({
+                $(this).find(".thumbnail-overlay").stop(true).animate({
                     top: 0
-                }, 500, "linear", function () {
-                });
+                }, 300, "linear");
             }, function () {
-                $(".thumbnail-overlay").animate({
+                $(this).find(".thumbnail-overlay").stop(true).animate({
                     top: thumbHeight
-                }, 500, "linear", function () {
-                });
-            });
-            $(".thumbnail").on("mouseenter", function () {
-                $(".thumbnail-overlay").animate({
-                    top: 0
-                }, 500, "linear", function () {
-                });
-            }).on("mouseleave", function () {
-                $(".thumbnail-overlay").animate({
-                    top: thumbHeight
-                }, 500, "linear", function () {
-                });
+                }, 300, "linear");
             });
         };
         return Main;

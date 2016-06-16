@@ -34,6 +34,10 @@
 		&:before {
 			background: $colorRed;
 		}
+
+		&.is-mouse-down {
+			color: $colorRed !important;
+		}
 	}
 
 	&:before {
@@ -49,6 +53,12 @@
 		border-bottom: inherit;
 		border-right: inherit;
 		-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;
+	}
+
+	&.small {
+		&:before {
+			left: 30px;
+		}
 	}
 
 }

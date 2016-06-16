@@ -58,36 +58,17 @@ class Main
 
 		$(".thumbnail-overlay").css("top", thumbHeight).css("display", "block");
 
-		$(".thumbnail").hover(()=>
+		$(".thumbnail").hover(function()
 		{
-			$(".thumbnail-overlay").animate({
+			$(this).find(".thumbnail-overlay").stop(true).animate({
 				top: 0
-			}, 500, "linear", ()=>
-			{
-			});
-		}, () =>
+			}, 300, "linear");
+		}, function()
 		{
-			$(".thumbnail-overlay").animate({
+			$(this).find(".thumbnail-overlay").stop(true).animate({
 				top: thumbHeight
-			}, 500, "linear", ()=>
-			{
-			});
+			}, 300, "linear");
 		});
-
-		$(".thumbnail").on("mouseenter", () =>
-		{
-			$(".thumbnail-overlay").animate({
-				top: 0
-			}, 500, "linear", ()=>
-			{
-			});
-		}).on("mouseleave", () => {
-			$(".thumbnail-overlay").animate({
-				top: thumbHeight
-			}, 500, "linear", ()=>
-			{
-			});
-		})
 	}
 
 
