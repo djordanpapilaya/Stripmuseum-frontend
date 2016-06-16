@@ -76,22 +76,32 @@ $basepath = HttpHelper::getBasePath();
 
 		<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Bezoek <span class="sr-only">(current)</span></a></li>
-				<li><a href="#">Het museum</a></li>
-				<li><a href="#">Nieuws</a></li>
-				<li><a href="#">Contact</a></li>
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					   aria-expanded="false">Bezoek <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">One more separated link</a></li>
+						<li><a href="#">sub-pagina</a></li>
+						<li><a href="#">sub-pagina1</a></li>
 					</ul>
 				</li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					   aria-expanded="false">Het museum <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">sub-pagina</a></li>
+						<li><a href="#">sub-pagina1</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					   aria-expanded="false">Nieuws <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">sub-pagina</a></li>
+						<li><a href="#">sub-pagina1</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -129,7 +139,16 @@ $basepath = HttpHelper::getBasePath();
 		<div class="row container-fluid">
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail">
-					<div class="thumbnail-overlay">lalalalalla</div>
+					<div class="thumbnail-overlay">
+						<div class="thumbnail-mask"></div>
+						<div class="thumbnail-content">
+							<p class="copy-01 large-size light large-line-height text-center">Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt.
+								Her de lorem al ter dos.</p>
+							<a class="quote-button small red single-margin-bottom" role="button">Bekijk</a>
+						</div>
+					</div>
 				</div>
 				<div class="caption text-center">
 					<h3 class="heading-03 text-uppercase">Expositie naam</h3>
@@ -137,6 +156,16 @@ $basepath = HttpHelper::getBasePath();
 			</div>
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail">
+					<div class="thumbnail-overlay">
+						<div class="thumbnail-mask"></div>
+						<div class="thumbnail-content">
+							<p class="copy-01 large-size light large-line-height text-center">Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt.
+								Her de lorem al ter dos.</p>
+							<a class="quote-button small red single-margin-bottom" role="button">Bekijk</a>
+						</div>
+					</div>
 				</div>
 				<div class="caption text-center">
 					<h3 class="heading-03 text-uppercase">Nog een expo</h3>
@@ -144,6 +173,16 @@ $basepath = HttpHelper::getBasePath();
 			</div>
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail">
+					<div class="thumbnail-overlay">
+						<div class="thumbnail-mask"></div>
+						<div class="thumbnail-content">
+							<p class="copy-01 large-size light large-line-height text-center">Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt.
+								Her de lorem al ter dos.</p>
+							<a class="quote-button small red single-margin-bottom" role="button">Bekijk</a>
+						</div>
+					</div>
 				</div>
 				<div class="caption text-center">
 					<h3 class="heading-03 text-uppercase">kinderprogramma</h3>
@@ -258,6 +297,9 @@ $basepath = HttpHelper::getBasePath();
 <script src="inc/script/vendor/jquery/jquery.js"></script>
 <script src="inc/script/vendor/jquery/jqueryui.js"></script>
 <script src="inc/script/vendor/require/require.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
 <script src="inc/script/app/Bootstrap.js"></script>
 <!-- endbuild -->
 

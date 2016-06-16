@@ -21,6 +21,10 @@
 			background-color: $colorMain !important;
 		}
 	}
+
+	.dropdown-menu {
+		background: $colorTint;
+	}
 }
 
 .navbar-brand {
